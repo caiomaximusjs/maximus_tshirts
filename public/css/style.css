@@ -356,10 +356,10 @@ footer p a {
         font-size: 12px;
         transition: 0.4s ease-in-out;
         line-height: 40px;
-        width: 120px;
+        width: 90px;
       }
       div.pesquise:hover > .txt {
-        width: 180px;
+        width: 150px;
         padding: 0 6px;
       }
       div.pesquise:hover > section.search button.btnSearch {
