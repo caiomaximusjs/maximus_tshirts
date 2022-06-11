@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: futura;
+    src: url(/public/assets/font/Futura\ Book\ font.ttf);
+}
+@font-face {
+    font-family: futurablck;
+    src: url(/public/assets/font/Futura\ Extra\ Black\ font.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto
+}
+body h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: futura;
+    margin: 4rem;
+}
+body{
+    width: 100%;
+}
+
+nav {
+    margin-top: -10rem;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.423)
+}
+nav ul {
+  text-align: start;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  transition: .2s ease-in-out;
+}
+nav ul a:hover {
+  color: rgb(140, 140, 140);
+}
+nav ul a#logo li {
+    transition: .2s ease-in-out;
+  font-family: futura;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+nav ul a li {
+  font-family: futura;
+  font-size: 1.5rem;
+}
+
+body{
+    background-color: rgba(32, 32, 32, 0.703);
+    background-blend-mode: overlay;
+    background-image: url(https://cdn.shopify.com/s/files/1/0502/2312/0552/files/S_01_EXTERNA_CAM_03_2048x.png?v=1646693810);
+}
+div.container h2{
+    color: white;
+    text-align: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+div.container{
+    border-radius: 1.5rem;
+    padding: 2rem;
+   background: #00000082;
+    width: 40rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+div.campos{
+    margin-top: .8rem;
+    text-align: center;
+}
+div.campos input{
+    background-color:#00000082 ;
+    padding: .6rem;
+    font-size: 1rem;
+}
+div.campos label{
+    color: white;
+font-size: 1.2rem;
+}
+div.campos input,
+div.campos textarea{
+    border: none;
+    background-color: #00000082;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: .5rem;
+    text-align: center;
+    width:60%;
+    outline: none;
+    border-radius: .8rem;
+}
+form button{
+    cursor: pointer;
+    width: 40%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border: none;
+    transition: .2s ease;
+}
+form button:hover{
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.02);
+}
+
+div#imagem img{
+    width: 17rem;
+}
+
+@media only screen and (max-width: 980px){
+    nav {
+        margin-top: -10rem;
+      display: flex;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.423)
+    }
+    nav ul {
+      text-align: center;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      padding: .8rem
+    }
+    nav ul a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.3rem;
+      transition: .2s ease-in-out;
+    }
+    nav ul a:hover {
+      color: rgb(140, 140, 140);
+    }
+    nav ul a#logo li {
+        transition: .2s ease-in-out;
+      font-family: futura;
+      font-weight: bolder;
+      letter-spacing: 0.1rem;
+      font-size: 1.5rem;
+    }
+    nav ul a li {
+        
+      font-family: futura;
+      font-size: 1.5rem;
+    } 
+    div.container h2{
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+    div.container{
+
+        width: 25rem;
+    }
+    div.campos{
+        margin-top: .8rem;
+        text-align: center;
+    }
+    div.campos input{
+        padding: .6rem;
+        font-size: 1rem;
+    }
+    div.campos label{
+        color: white;
+    font-size: .9rem;
+    }
+    div.campos input,
+    div.campos textarea{
+        margin-top: .5rem;
+        width:70%;
+    }
+}
+@media only screen and (max-width: 600px){
+    nav {
+        margin-top: -10rem;
+        display: flex;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.423)
+      }
+      nav ul {
+        text-align: start;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        padding: .6rem
+      }
+      nav ul a {
+        margin-right: 1.5rem;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.3rem;
+        transition: .2s ease-in-out;
+      }
+      nav ul a:hover {
+        color: rgb(140, 140, 140);
+      }
+      nav ul a#logo li {
+          transition: .2s ease-in-out;
+        font-family: futura;
+        font-weight: bolder;
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+      }
+      nav ul a li {
+        font-family: futura;
+        font-size: 1rem;
+      } 
+    div.container h2{
+        font-size: .9rem;
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    div.container{
+        width: 18rem;
+    }
+    div.campos{
+        margin-top: .8rem;
+        text-align: center;
+    }
+    div.campos input{
+        padding: .3rem;
+        font-size: .6rem;
+    }
+    div.campos label{
+        color: white;
+    font-size: .6rem;
+    }
+    div.campos input,
+    div.campos textarea{
+        margin-top: .5rem;
+        text-align: center;
+        width:80%;
+        outline: none;
+        border-radius: .8rem;
+    }
+}
+

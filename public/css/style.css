@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: futura;
+  src: url(/public/assets/font/Futura\ Book\ font.ttf);
+}
+@font-face {
+  font-family: futurablck;
+  src: url(/public/assets/font/Futura\ Extra\ Black\ font.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+body h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: bebas neue;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  margin: 4rem;
+}
+body {
+  flex-wrap: wrap;
+  display: flex;
+  background-color: #f2f2f2;
+}
+nav {
+    margin-top: -.5rem;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.423)
+}
+nav ul {
+  text-align: start;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  transition: .2s ease-in-out;
+}
+nav ul a:hover {
+  color: rgb(140, 140, 140);
+}
+nav ul a#logo li {
+    transition: .2s ease-in-out;
+  font-family: futura;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+nav ul a li {
+  font-family: futura;
+  font-size: 1.5rem;
+}
+img#banner {
+  z-index: 0;
+  width: 100%;
+  opacity: 90%;
+}
+div.container {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-evenly
+}
+a#veja {
+  color: white;
+  padding: 0.45rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+a#veja:hover {
+  transform: scale(1.02);
+  color: black;
+}
+a#veja i {
+  margin-left: 0.6rem;
+  font-size: 1.2rem;
+}
+div.item {
+  border: solid 1px rgb(183, 182, 182);
+  padding: 1.5rem;
+  margin: 1rem;
+  width: 14rem;
+  margin-bottom: 2.3rem;
+  text-align: start;
+  transition: 0.3s ease-in-out;
+}
+div.item h2 {
+  font-family: futura;
+  font-size: 1.3rem;
+}
+div.item p {
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+div.item img {
+  transition: 0.6s ease-in-out;
+  width: 14.5rem;
+  height: 14.5rem;
+}
+div.item p#preco {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+div.item:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+div#icons a#cart i {
+  color: black;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+div#icons {
+  text-align: end;
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.veja {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: rgb(0, 0, 0);
+  width: 30%;
+  text-align: center;
+  border: solid 0.5px black;
+  font-size: 0.5rem;
+  margin-top: 0.2rem;
+  transition: 0.5s ease-in-out;
+  opacity: 30%;
+}
+.veja:hover {
+  margin-top: 0.5rem;
+  width: 75%;
+  background-color: black;
+  font-size: 1rem;
+  color: white;
+  opacity: 100%;
+}
+.message {
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 4rem;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.message i {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: #000000;
+  padding: 0;
+}
+.message i:hover {
+  transform: scale(1.2);
+  color: #ff0202;
+}
+
+.message-danger {
+  background-color: #f52525b3;
+  color: #ffffff;
+}
+
+.message-sucess {
+  background-color: #6bfb5dca;
+  color: #000000;
+}
+
+section.search {
+  width: 100%;
+  display: flex;
+}
+section.search form {
+  width: 100%;
+  display: flex;
+}
+div.pesquise {
+  background-color: #bebebe;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+section.search input {
+  color: #f2f2f2;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  font-size: 16px;
+  transition: 0.4s ease-in-out;
+  line-height: 40px;
+  width: 180px;
+}
+div.pesquise:hover > .txt {
+  width: 240px;
+  padding: 0 6px;
+}
+div.pesquise:hover > section.search button.btnSearch {
+  background: white;
+}
+button.btnSearch {
+  cursor: pointer;
+  border: none;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(143, 143, 143);
+  transition: 2s;
+  color: #f2f2f2;
+}
+button.btnSearch:hover {
+  background-color: #616161;
+}
+div.results{
+  display: flex;
+  width: max-content;
+  font-size: .9rem;
+margin-top: 5rem;
+}
+h2#resultados{
+  margin: 1rem;
+text-align: center;
+}
+
+a#todos{
+margin-left: auto;
+text-decoration: none;
+color: #f2f2f2;
+background-color: #000000;
+padding: .4rem;
+font-size: 1rem;
+width: 13rem;
+height: 1.5rem;
+border-radius: 40px;
+text-align: center;
+transition: .2s ease-in-out;
+}
+a#todos:hover{
+  transform: scale(1.02);
+  background-color: #f2f2f2;
+  color: #000000;
+  border: solid .5px black
+}
+
+footer {
+  color: #f2f2f2;
+  width: 100%;
+  padding: 1rem;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+}
+footer p a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 1050px){
+    nav {
+        margin-top: -.5rem;
+      display: flex;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.423)
+    }
+    nav ul {
+      text-align: start;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      padding: .8rem
+    }
+    nav ul a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.3rem;
+      transition: .2s ease-in-out;
+    }
+    nav ul a:hover {
+      color: rgb(140, 140, 140);
+    }
+    nav ul a#logo li {
+        transition: .2s ease-in-out;
+      font-family: futura;
+      font-weight: bolder;
+      letter-spacing: 0.1rem;
+      font-size: 1.5rem;
+    }
+    nav ul a li {
+      font-family: futura;
+      font-size: 1.5rem;
+    } 
+    body h1{
+        font-size: 2rem;
+    }
+    section.search {
+        width: 100%;
+        display: flex;
+      }
+      section.search form {
+        width: 100%;
+        display: flex;
+      }
+      div.pesquise {
+        background-color: #bebebe;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 40px;
+        border-radius: 40px;
+        padding: 8px;
+      }
+      section.search input {
+        color: #f2f2f2;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        font-size: 12px;
+        transition: 0.4s ease-in-out;
+        line-height: 40px;
+        width: 120px;
+      }
+      div.pesquise:hover > .txt {
+        width: 180px;
+        padding: 0 6px;
+      }
+      div.pesquise:hover > section.search button.btnSearch {
+        background: white;
+      }
+      button.btnSearch {
+        cursor: pointer;
+        border: none;
+        float: right;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(143, 143, 143);
+        transition: 2s;
+        color: #f2f2f2;
+      }
+      button.btnSearch:hover {
+        background-color: #616161;
+      }
+      
+}
+@media only screen and (max-width: 550px){
+    nav {
+      margin-top: -.5rem;
+      display: flex;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.423)
+    }
+    nav ul {
+      text-align: start;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      padding: .6rem
+    }
+    nav ul a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.3rem;
+      transition: .2s ease-in-out;
+    }
+    nav ul a:hover {
+      color: rgb(140, 140, 140);
+    }
+    nav ul a#logo li {
+        transition: .2s ease-in-out;
+      font-family: futura;
+      font-weight: bolder;
+      letter-spacing: 0.1rem;
+      font-size: 1.2rem;
+    }
+    nav ul a li {
+      font-family: futura;
+      font-size: 1rem;
+    } 
+    body h1{
+        font-size: 1.5rem;
+    } 
+    div.container{
+        margin-top: 5rem;
+    } 
+    div.item {
+        border: solid 1px rgb(183, 182, 182);
+        padding: 1.5rem;
+        margin: 1rem;
+        width: 10rem;
+        margin-bottom: 2.3rem;
+        text-align: start;
+        transition: 0.3s ease-in-out;
+      }  
+      div.item h2 {
+        font-family: futura;
+        font-size: 1.3rem;
+      }
+      div.item p {
+        margin-bottom: 0.2rem;
+        font-size: 1rem;
+      }
+      div.item img {
+        transition: 0.6s ease-in-out;
+        width: 9.5rem;
+        height: 9.5rem;
+      }
+      div.item p#preco {
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+      div.item:hover {
+        transform: scale(1.1);
+        opacity: 100%;
+      }
+     
+      footer{
+          padding: 2rem;
+      }
+      .message {
+          margin-left: auto;
+          margin-right: auto;
+        background-color: white;
+        color: black;
+        position: fixed;
+        top: 2.2rem;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        padding: 1.5rem;
+        font-weight: 600;
+        font-size: .8rem;
+      }
+}

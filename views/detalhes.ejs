@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/styleDetalhes.css">
+    <link rel="icon" href="/assets/img/logoTshirt.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= tshirt.nome %></title>
+    
+</head>
+<%- include('./components/nav.ejs') %>
+<body>
+   
+    <div class="container">
+<div class="imagemCia">
+    <h3><%= tshirt.nome %> </h3>
+<div class="imagem">
+<img src="<%= tshirt.imagem %>" alt="">
+<img src="<%= tshirt.imagem2 %>" alt="">
+</div>
+<div class="planet">
+    <a href="https://singapurastore.com/pages/sustentabilidade">
+<img id="planet" src="https://www.onepercentfortheplanet.org/hubfs/OnePercentForThePlane_November2019%20Theme/Images/1ftp_Primary_Horizontal_Blue%20(2).png?format=750w" alt=""></a>
+<p id="planet">Nós investimos 1% do valor deste produto
+    em ações para salvar o Planeta.
+    
+    Para saber mais sobre a nossa história
+    com causas ambientais
+    clique no 1% For the Planet.
+    </p>
+</div>
+</div>
+<div class="infos">
+
+
+<p id="preco">Preço:</p>
+<h4 id="preco">R$ <%= tshirt.preco %></h4>
+<div class="tamanhos">
+    <div class="numeros">
+    <h4>PP</h4>
+    </div>
+    <div class="numeros">
+        <h4>P</h4>
+    </div>
+    <div class="numeros">
+        <h4>M</h4>
+    </div>
+    <div class="numeros">
+        <h4>G</h4>
+    </div>
+    <div class="numeros">
+        <h4>GG</h4>
+    </div>
+    <div class="numeros">
+        <h4>XG</h4>
+    </div>
+    
+    </div>
+<p id="desc">descrição:</p>
+<p id="descricao"><%= tshirt.descricao %> </p>
+<div class="boleto">
+<p>pague no boleto e ganhe 5% de desconto na sua compra</p>
+</div>
+<div class="carrinho">
+<a id="btnCart">
+    <i class="bi bi-cart-plus-fill"></i>Adicione ao carrinho</a>
+</div>
+<div class="carrinho">
+<a href="/updater/<%= tshirt.id %>" id="btnCart">
+    <i class="bi bi-pencil-fill"></i>Editar</a>
+</div>
+<div class="carrinho">
+<a href="/deletar/<%= tshirt.id %>" id="btnCart">
+    <i class="bi bi-trash3-fill"></i>Deletar</a>
+</div>
+<div class="parcelas">
+    <i class="bi bi-credit-card-fill"></i>
+<p class="doze">no cartão em até 12x sem juros</p>
+<p class="juros">A vista: R$<%= tshirt.preco %></p>
+<p class="juros">2x sem juros: R$<%= tshirt.preco / 2 %></p>
+<p class="juros">4x sem juros: R$<%= tshirt.preco / 4 %></p>
+<p class="juros">6x sem juros: R$<%= tshirt.preco / 6 %></p>
+<p class="juros">8x sem juros: R$<%= tshirt.preco / 8  %></p>
+<p class="juros">10x sem juros: R$<%= tshirt.preco / 10 %></p>
+<p class="juros">12x sem juros: R$<%= tshirt.preco / 12 %></p>
+</div>
+</div>
+</div>
+<div class="h2">
+<h2 id="mais">Veja mais produtos</h2>
+</div>
+<div class="mais">
+    
+<% tshirts.slice(-3).forEach(shirt => { %>
+    <div class="item">
+        <a href="/tshirt/<%=shirt.id %> ">
+        <img src="<%= shirt.imagem %>" onmouseover="this.src='<%= shirt.imagem2 %>'"
+        onmouseout="this.src='<%= shirt.imagem %>'" alt="">
+        
+    </a>
+
+        <p><%= shirt.nome %></p>
+        <p id="preco">R$<%= shirt.preco %></p>
+        <div id="icons">
+            <a class="veja" href="/tshirt/<%=shirt.id %>">DETALHES</a>
+    </div>
+    </div>
+<% }); %>
+
+    </div>
+</div>
+
+</body>
+</html>

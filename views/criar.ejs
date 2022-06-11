@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/img/logoTshirt.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleCriar.css">
+    <title>Document</title>
+</head>
+<%- include('./components/nav.ejs') %>
+<body>
+   <form action="/create" method="post">
+       <div class="container">
+           <h2>Cadastrar novo produto</h2>
+       <div class="campos">
+           <div class="label">
+           <label for="nome">Nome:</label>
+        </div>
+           <input type="text" id="nome" name="nome" placeholder="Digite o nome do produto" required>
+       </div>
+       <div class="campos">
+        <div class="label">
+        <label for="preco">Preço do produto</label>
+        </div>
+        <input onkeypress="mascara(this,mreais)" size="7" min="100,00" max="1.064,00" id="preco" name="preco" placeholder="ex: 219.00 não ultilizar virgula" required>
+       </div>
+       <div class="campos">
+        <div class="label">
+        <label for="descricao">Descricao do produto</label>
+        </div>
+        <textarea name="descricao" id="descricao" cols="30" rows="3"
+        placeholder="Digite aqui a descrição do produto a ser cadastrado" required></textarea>
+       </div>
+       <div class="campos">
+        <div class="label">
+        <label for="imagem">Link imagem do produto</label>
+        </div>
+        <textarea name="imagem" id="imagem" cols="30" rows="3"  placeholder="cole aqui o link da imagem do produto a ser cadastrado" required></textarea>
+        <div class="label">
+        <label for="imagem2">Imagem secundária</label>
+    </div>
+        <textarea name="imagem2" id="imagem2" cols="30" rows="3"  placeholder="cole aqui o link da imagem secundária do produto (opcional)"></textarea>
+       </div>
+
+
+<button type="submit">cadastrar</button>
+</div>
+   </form> 
+</body>
+</html>

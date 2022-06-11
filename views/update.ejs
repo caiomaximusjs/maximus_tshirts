@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/img/logoTshirt.png">
+    <link rel="stylesheet" href="/css/styleCriar.css" />
+    <title>Document</title>
+  </head>
+  <%- include('./components/nav.ejs') %>
+  <body>
+    <form action="/update/<%= tshirt.id %>" method="post">
+      <div class="container">
+        <div class="infos">
+          <h2>Editar Produto</h2>
+          <div class="campos">
+            <div class="label">
+              <label for="nome">Nome:</label>
+            </div>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite o nome do produto"
+              value="<%= tshirt.nome %>"
+            required/>
+          </div>
+          <div class="campos">
+            <div class="label">
+              <label for="preco">Preço</label>
+            </div>
+            <input
+              onkeypress="mascara(this,mreais)"
+              size="7"
+              min="100,00"
+              max="1.064,00"
+              id="preco"
+              name="preco"
+              placeholder="ex: 219.00"
+              value="<%= tshirt.preco %>"
+              required/>
+          </div>
+          <div class="campos">
+            <div class="label">
+              <label for="descricao">Descricao</label>
+            </div>
+            <input
+              type="text"
+              name="descricao"
+              id="descricao"
+              value="<%= tshirt.descricao %>"
+              required/>
+          </div>
+          <div class="campos">
+            <div class="label">
+              <label for="imagem">Link imagem</label>
+            </div>
+            <input
+              type="text"
+              name="imagem"
+              id="imagem"
+              value="<%= tshirt.imagem %>"
+              required/>
+              </div>
+          <div class="campos">
+            <div class="label">
+              <label for="imagem2">Link imagem</label>
+            </div>
+            <input
+              type="text"
+              name="imagem2"
+              id="imagem2"
+              value="<%= tshirt.imagem2 %>"
+              />
+            <button type="submit">Editar</button>
+        </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
