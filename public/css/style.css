@@ -359,7 +359,7 @@ footer p a {
         width: 90px;
       }
       div.pesquise:hover > .txt {
-        width: 150px;
+        width: 130px;
         padding: 0 6px;
       }
       div.pesquise:hover > section.search button.btnSearch {
