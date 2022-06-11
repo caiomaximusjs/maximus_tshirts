@@ -73,13 +73,10 @@ const updater = async (req, res) => {
     });
   }
 
-  message = 'Produto editado com sucesso'
-  type= 'sucess'
-
   res.render("update", {
     tshirt,
-    message: '',
-    type: ''
+    message: 'produto editado com sucesso',
+    type: 'sucess'
   });
 };
 
