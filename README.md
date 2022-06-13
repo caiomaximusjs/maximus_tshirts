@@ -2,9 +2,6 @@
 <h3>Catalogo CRUD (Create, read, update e delete) com banco de dados <h3>
   
  Projeto desenvolvido por Caio Maximus
-  <br>
-  <img  src="https://media-exp1.licdn.com/dms/image/D4E35AQEysX_QZv01yQ/profile-framedphoto-shrink_400_400/0/1655064454578?e=1655697600&v=beta&t=ZuZ_S_IdTER_W4VC91snX35d56XU_kyZDW_baC6Lr5M" alt="Creator image">
-  <br>
   
   
  Projeto já no heroku: https://maximustshirts.herokuapp.com/
@@ -44,7 +41,8 @@
   A tela inicial do Catalogo
   <br>
   <div>
-    ![Gravação-de-Tela-2022-06-13-às-00 32 38](https://user-images.githubusercontent.com/103537930/173274732-88cfe5c9-0f53-413a-bb07-ac9b79656f83.gif)
+<img width="1424" alt="Captura de Tela 2022-06-13 às 00 42 19" src="https://user-images.githubusercontent.com/103537930/173275470-3ca84306-e3fd-439e-93e8-a5baa50c4191.png">
+03537930/173275434-2531a813-7901-47d3-a2d5-8c9c118a5575.png">
   </div>
   
   <br>
@@ -58,8 +56,7 @@
   Tela de detalhes do catalogo
   <br>
   <div>
-    ![Gravação-de-Tela-2022-06-13-às-00 36 10](https://user-images.githubusercontent.com/103537930/173275047-41fba288-b220-4535-9a81-56deeae86509.gif)
-ng">
+<img width="1424" alt="Captura de Tela 2022-06-13 às 00 41 47" src="https://user-images.githubusercontent.com/1" >
   </div>
 
   
