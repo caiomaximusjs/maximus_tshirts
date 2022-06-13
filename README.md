@@ -41,8 +41,7 @@
   A tela inicial do Catalogo
   <br>
   <div>
-<img width="1424" alt="Captura de Tela 2022-06-13 às 00 42 19" src="https://user-images.githubusercontent.com/103537930/173275470-3ca84306-e3fd-439e-93e8-a5baa50c4191.png">
-03537930/173275434-2531a813-7901-47d3-a2d5-8c9c118a5575.png">
+<img width="1424" alt="Captura de Tela 2022-06-13 às 00 42 19" src="https://user-images.githubusercontent.com/103537930/173276615-a3d9acc7-6050-4eba-8059-508a076ec5df.png">
   </div>
   
   <br>
@@ -56,7 +55,7 @@
   Tela de detalhes do catalogo
   <br>
   <div>
-<img width="1424" alt="Captura de Tela 2022-06-13 às 00 41 47" src="https://user-images.githubusercontent.com/1" >
+<img width="1424" alt="Captura de Tela 2022-06-13 às 00 41 47" src="https://user-images.githubusercontent.com/103537930/173276713-d8b4ea91-5626-46c2-98f0-d93418fa7423.png">
   </div>
 
   
