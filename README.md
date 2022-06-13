@@ -3,7 +3,7 @@
   
  Projeto desenvolvido por Caio Maximus
   <br>
-  <img width="550" src="https://media-exp1.licdn.com/dms/image/D4E35AQEysX_QZv01yQ/profile-framedphoto-shrink_400_400/0/1655064454578?e=1655697600&v=beta&t=ZuZ_S_IdTER_W4VC91snX35d56XU_kyZDW_baC6Lr5M" alt="Creator image">
+  <img  src="https://media-exp1.licdn.com/dms/image/D4E35AQEysX_QZv01yQ/profile-framedphoto-shrink_400_400/0/1655064454578?e=1655697600&v=beta&t=ZuZ_S_IdTER_W4VC91snX35d56XU_kyZDW_baC6Lr5M" alt="Creator image">
   <br>
   
   
