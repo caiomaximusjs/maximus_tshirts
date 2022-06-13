@@ -1,5 +1,5 @@
 <h1>Projeto 04 Modulo 02 Blue Edtech</h1>
-<h3>Catalogo CRUD (Create, read, update e delete) com banco de dados <h3>
+<h3>Catalogo CRUD (Create, read, update e delete) com banco de dados </h3>
   
  Projeto desenvolvido por Caio Maximus
   
